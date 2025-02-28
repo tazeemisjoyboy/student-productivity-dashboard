@@ -1,4 +1,3 @@
-// frontend/src/App.js
 import React from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Dashboard from './pages/Dashboard';
@@ -14,28 +13,43 @@ const App = () => {
     <BrowserRouter>
       <div className="App">
         {/* Navigation Menu */}
-        <nav className="navbar navbar-expand-lg navbar-light bg-light mb-4">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
           <div className="container-fluid">
             <a className="navbar-brand" href="/">Student Productivity Dashboard</a>
-            <div className="collapse navbar-collapse">
-              <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span className="navbar-toggler-icon"></span>
+            </button>
+            <div className="collapse navbar-collapse" id="navbarNav">
+              <ul className="navbar-nav ms-auto">
                 <li className="nav-item">
-                  <Link className="nav-link" to="/">Dashboard</Link>
+                  <Link className="nav-link" to="/">
+                    <i className="fas fa-tachometer-alt"></i> Dashboard
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/tasks">Tasks</Link>
+                  <Link className="nav-link" to="/tasks">
+                    <i className="fas fa-tasks"></i> Tasks
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/study">Study Planner</Link>
+                  <Link className="nav-link" to="/study">
+                    <i className="fas fa-book"></i> Study Planner
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/pomodoro">Pomodoro Timer</Link>
+                  <Link className="nav-link" to="/pomodoro">
+                    <i className="fas fa-clock"></i> Pomodoro Timer
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/notes">Notes</Link>
+                  <Link className="nav-link" to="/notes">
+                    <i className="fas fa-sticky-note"></i> Notes
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/auth">Auth</Link>
+                  <Link className="nav-link" to="/auth">
+                    <i className="fas fa-user"></i> Auth
+                  </Link>
                 </li>
               </ul>
             </div>
