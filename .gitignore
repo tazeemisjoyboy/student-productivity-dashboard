@@ -1,0 +1,14 @@
+# Node.js
+node_modules/
+
+# Build output
+dist/
+build/
+
+# IDE settings (if using VSCode or JetBrains)
+.vscode/
+.idea/
+
+# OS specific files
+.DS_Store
+Thumbs.db
